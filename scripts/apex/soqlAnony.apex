@@ -1,0 +1,9 @@
+SoqlDemo.parentToChild_SOQL2();
+SoqlDemo.parentToChid_SOQL1();
+SoqlDemo.childToParent_SOQL1();
+SoqlDemo.account_soqlFilter('qwedrftgyh');
+SoqlDemo.account_soqlFilter('GenePoint');
+SoqlDemo.accountSOQL_3();
+SoqlDemo.accountSOQL_2();
+SoqlDemo.accountSOQL_11();
+SoqlDemo.accountSOQL_1();

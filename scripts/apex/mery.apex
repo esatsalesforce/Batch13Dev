@@ -1,0 +1,15 @@
+date mC = date.newInstance(1867, 11, 7);
+system.debug('marie cury"nin doğum tarihi: '+mC);
+date today =date.today();
+integer a =mC.daysBetween(today);
+integer b = a/365;
+system.debug(b);
+integer c=mC.monthsBetween(today);
+integer d=c/12;
+system.debug(d);
+integer birthOfMc=mC.year();
+integer present =date.today().year();
+integer difference = present-birthOfMc;
+system.debug(difference);
+boolean leapOrNot = date.isLeapYear(birthOfMc);
+system.debug('marie curie"nin doğum tarihi artik yil midir?' +leapOrNot);

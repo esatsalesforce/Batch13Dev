@@ -1,0 +1,23 @@
+SELECT id, name, phone from Account
+
+SELECT Id, Name, Type, Industry FROM Account where industry ='energy' LIMIT 1
+
+SELECT Id, Name, Type, Industry, phone FROM Account where phone != null
+
+SELECT Id, Name, Type, Industry, phone FROM Account where industry != 'energy'
+
+select id, name, project_name__c, status__c from Salesforce_Project__c where status__c != 'new'
+
+select id, name, phone, accountnumber from account where phone != null and accountnumber != null
+
+select id, name, phone, accountnumber from account where (phone != null or website != null or name like 's%') and accountnumber != null
+
+select id, name, phone,annualRevenue, accountnumber,website from account where annualrevenue >300000 
+
+select id, name, phone, mailingcity from contact where mailingcity in ('Paris', 'burlington', 'lawrence')
+
+select id, name, subject__c, priority__c, salesforce_project__r.project_name__c, salesforce_project__r.status__c from salesforce_ticket__c
+
+select name, project_name__c,(select subject__c, priority__c, status__c from salesforce_tickets__r) from salesforce_project__c
+
+
