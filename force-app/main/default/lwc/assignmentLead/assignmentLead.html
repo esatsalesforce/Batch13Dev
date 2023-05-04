@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Assignment LEAD ">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+              <span><lightning-record-edit-form
+                object-api-name={objName}
+                record-id={recordId}
+                onsuccess={successHandler}
+                onerror={errorHandler}>
+        
+                <lightning-input-field field-name={fields.LastName}></lightning-input-field>
+                <lightning-input-field field-name={fields.Company}></lightning-input-field>
+                <lightning-input-field field-name={fields.Status}></lightning-input-field>
+
+                <div class="slds-align_absolute-center">
+                     <lightning-button label="Cancel" type="reset" variant="neutral" class="slds-var-m-right_small">
+                        </lightning-button>
+                <lightning-button label="Save" type="submit" variant="brand">
+                </lightning-button>
+                </div>
+               
+                </lightning-record-edit-form></span>
+            </div>
+            <div class="slds-col">
+              <span><lightning-record-view-form
+                object-api-name={objName}
+                record-id={recordId}>
+                    <div class="slds-box">
+                        <lightning-output-field field-name={fields.LastName}> </lightning-output-field>
+                        <lightning-output-field field-name={fields.Company}> </lightning-output-field>
+                        <lightning-output-field field-name={fields.Status}> </lightning-output-field>
+
+                    </div>    
+                </lightning-record-view-form></span>
+            </div>
+          </div>
+    </lightning-card>
+</template>

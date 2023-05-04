@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Two Way Binding">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="text" label="Enter student Name" value={studentName} onchange={changeHandler}></lightning-input><br>
+            <lightning-input type="number" label="Enter Age" value={age} onchange={ageHandler}></lightning-input><br>
+            <lightning-input type="text" label="Batch Name" onchange={batchNameHandler}></lightning-input><br>
+            <lightning-input type="text" label="Salesforce Module" onchange={moduleHandler}></lightning-input><br>
+
+            <div><strong> Student Name is {studentName} </strong></div>
+            <div><strong>Age is {age}</strong></div>
+
+            <div><strong>Batch name is {batch.batchName}</strong></div>
+            <div><strong>Module is {firstModule}</strong></div>
+
+        </div>
+    </lightning-card>
+    
+</template>
